@@ -230,7 +230,7 @@ func TestKptFnCommand(t *testing.T) {
 				},
 				OutputPath: "my/output/manifest.yaml",
 			},
-			3, []string{" annotations:\n    config.kubernetes.io/index: 1\n    config.kubernetes.io/path: my/output/manifest.yaml\n"},
+			3, []string{" annotations:\n    config.kubernetes.io/index: \"2\"\n    config.kubernetes.io/path: my/output/manifest.yaml\n"},
 		},
 		{
 			"annotate output path when annotations empty",
